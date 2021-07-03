@@ -1,6 +1,6 @@
 const uidGenerator = require ('node-unique-id-generator');
 
-class book {
+class Book {
     constructor (
       title = '', 
       description = '', 
@@ -22,4 +22,4 @@ class book {
       }
 }
 
-module.exports = book;
+module.exports = Book;
