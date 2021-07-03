@@ -22,7 +22,7 @@ app.use('/api/book', bookAPIRouter);
 app.use(errorMiddleware);
 
 //const PORT = 3000;
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`=== start server PORT ${PORT} ===`);
 });
