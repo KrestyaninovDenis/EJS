@@ -21,7 +21,8 @@ app.use('/book', bookRouter);
 app.use('/api/book', bookAPIRouter);
 app.use(errorMiddleware);
 
-const PORT = 3000;
+//const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Сервер стартовал, порт: ${PORT}`);
 });
