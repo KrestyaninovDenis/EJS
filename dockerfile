@@ -1,9 +1,9 @@
 FROM node:alpine
 
-WORKDIR /app
+WORKDIR ./
 
 COPY package*.json ./
 RUN npm install
-COPY ./ ejs/
+COPY ./ ./
 
 CMD ["npm", "start"]
